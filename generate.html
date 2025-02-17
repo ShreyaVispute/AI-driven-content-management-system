@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Content</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <script src="generate.js" defer></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+    <header>
+        <h1 id="platform-heading">Generating content for...</h1>
+    </header>
+    <main>
+        <form id="content-form">
+            <label for="prompt-input">Enter your prompt:</label>
+            <textarea id="prompt-input" rows="5" style="width: 100%; max-width: 600px;" required></textarea>
+            <fieldset>
+                <legend>Select length of content:</legend>
+                <label>
+                    <input type="radio" name="length" value="short" checked> Short
+                </label>
+                <label>
+                    <input type="radio" name="length" value="medium"> Medium
+                </label>
+                <label>
+                    <input type="radio" name="length" value="long"> Long
+                </label>
+            </fieldset>
+            <div style="margin-top: 15px;">
+                <button type="submit" class="generate-button">Generate Content</button>
+            </div>
+        </form>
+        <section id="generated-content" class="generated-content">
+            <h2>Generated Content:</h2>
+            <div id="content-display"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Shreya Vispute. All rights reserved.</p>
+    </footer>
+</body>
+</html>

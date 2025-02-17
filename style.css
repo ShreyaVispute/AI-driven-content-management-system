@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8E8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #674636;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #F7EED3;
+    border: 1px solid #AAB396;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+    height: 150px; /* Adjust height to your preference */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+main {
+    padding: 20px;
+}
+
+#platform-heading {
+    margin: 20px;
+    text-align: center;
+}
+
+#content-form {
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+fieldset {
+    border: 1px solid #AAB396;
+    padding: 10px;
+}
+
+.generate-button {
+    background-color: #674636;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.generate-button:hover {
+    background-color: #AAB396;
+}
+
+.generated-content {
+    margin-top: 20px;
+    background-color: #F7EED3;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#content-display {
+    padding: 10px;
+    border: 1px solid #AAB396;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+/* Add this to your existing styles.css file */
+textarea {
+    padding: 10px;
+    border: 1px solid #AAB396;
+    border-radius: 5px;
+    resize: none; /* Prevent resizing */
+    font-family: Arial, Helvetica, sans-serif;
+}
